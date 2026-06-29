@@ -1,0 +1,18 @@
+# Foundry
+out/
+cache/
+broadcast/
+
+# Node
+node_modules/
+.next/
+.vercel/
+
+# Secrets — NEVER commit
+.env
+.env.local
+.env.production
+
+# OS
+.DS_Store
+Thumbs.db

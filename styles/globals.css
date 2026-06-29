@@ -1,0 +1,39 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --void:      #080a0f;
+  --panel:     #0f1117;
+  --surface:   #161922;
+  --border:    rgba(255,255,255,0.08);
+  --border-hi: rgba(255,255,255,0.16);
+  --ritual:    #7c5cfc;
+  --ritual-d:  rgba(124,92,252,0.14);
+  --ritual-g:  rgba(124,92,252,0.32);
+  --teal:      #22d3b8;
+  --amber:     #f59e0b;
+  --red:       #ef4444;
+  --green:     #22c55e;
+  --text:      rgba(255,255,255,0.90);
+  --muted:     rgba(255,255,255,0.48);
+  --dim:       rgba(255,255,255,0.22);
+  --radius:    10px;
+  --font-mono: "JetBrains Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace;
+}
+
+html, body { height: 100%; background: var(--void); color: var(--text);
+  font-family: var(--font-mono); font-size: 13px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased; }
+
+a { color: var(--ritual); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button { font-family: var(--font-mono); cursor: pointer; }
+input, textarea { font-family: var(--font-mono); }
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 4px; }
+
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.45} }
+@keyframes pop { 0%,100%{transform:scale(1)} 45%{transform:scale(1.14)} }
+@keyframes slide-in { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:none} }
