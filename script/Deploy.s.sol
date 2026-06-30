@@ -38,7 +38,7 @@ contract DeploySovereignAgent is Script {
             "AGENT_PROMPT",
             string("Monitor Ritual Chain activity. Every wakeup: read recent blocks, summarize events, flag anomalies, post digest.")
         );
-        uint32 delay = uint32(vm.envOr("WAKE_DELAY", uint256(50)));
+        uint32 delay = uint32(vm.envOr("WAKE_DELAY", uint256(5000)));
 
         agent.start(prompt, delay);
         console.log("Started   : wakeDelay =", delay, "blocks (~",
