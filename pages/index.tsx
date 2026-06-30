@@ -56,7 +56,7 @@ export default function Home() {
   const [prompt, setPrompt]               = useState(
     "Monitor on-chain events. Every wakeup: summarize recent blocks, flag anomalies, post digest."
   );
-  const [wakeDelay, setWakeDelay]         = useState("50");
+  const [wakeDelay, setWakeDelay]         = useState("5000");
   const [fundAmount, setFundAmount]       = useState("0.1");
   const [pendingTx, setPendingTx]         = useState<`0x${string}` | undefined>();
   const [txLabel, setTxLabel]             = useState("");
