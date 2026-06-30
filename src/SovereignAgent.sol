@@ -75,7 +75,7 @@ contract SovereignAgent {
     constructor() {
         owner = msg.sender;
         agentHarness = "claude-code";
-        wakeDelay = 50;
+        wakeDelay = 5000;
     }
 
     /// @notice Start the autonomous agent loop.
